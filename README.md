@@ -15,7 +15,7 @@ Código para fins educativos para meus alunos do IFMA Campus Caxias-MA
 - [x] Entrada
 - [x] Saída
 - [x] Variáveis
-- [x] Operações Matematicas
+- [x] Operações Matemáticas
 - [x] Estrutura Condicional
 - [x] Laço Repeticao
 - [x] Matriz
