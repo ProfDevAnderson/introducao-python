@@ -1,4 +1,4 @@
-# Código de introducao aopython
+# Código de introdução ao Python
 <h1 align="center">Introdução ao Python</h1>
 
 ## Descrição do Projeto
