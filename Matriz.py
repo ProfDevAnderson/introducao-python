@@ -11,13 +11,13 @@ Matriz = [
 
 # Definir dois laços, um para percorrer a linha e outro a coluna
 
-for i in range(3):
-    for j in range(3):
-        print(Matriz[i][j], end = "|")
-    print('')
+# for i in range(3):
+#     for j in range(3):
+#         print(Matriz[i][j], end = "|")
+#     print('')
 
-linha = int (input("Quantidade de linhas: "))
-coluna = int (input("Quantidade de Colunas"))
+linha = int(input("Quantidade de linhas: "))
+coluna = int(input("Quantidade de Colunas: "))
 
 M = []
 for i in range(linha):
