@@ -1,20 +1,28 @@
-def incializar_lista():
-    for i in range(vertice):
+#Código para demonstrar o funcionamento de uma lista de adjacencias
+def inicializar_lista():
+    for i in range(vertices):
         grafo.append([])
 
-def adicionar_aresta(vertice_1, vertice_2):
-    grafo[vertice_1-1].append(vertice_2)
-    if vertice_1 != vertice_2:
-        grafo[vertice_2-1].append(vertice_1)
+def mostrar_grafo():
+    for i in range(vertices):
+        print(i+1, ': ', grafo[i])
 
-def mostrar_lista():
-    for i in range(vertice):
-        print(f'{i+1}: {grafo[i]}')
+def mostrar_grafo_detalhado():
+    for i in range(vertices):
+        print(i+1, ' :', end = ' ')
+        for j in grafo[i]:
+            print(j, end = ' ')
+        print('')
+
+def adicionar_aresta(vertice_a, vertice_b):
+    grafo[vertice_a-1].append(vertice_b)
 
 grafo = []
-vertice = int (input('Numero de vertices: '))
-incializar_lista()
+vertices = int (input('Qual a quantidade de vértices no grafo? '))
+inicializar_lista()
 adicionar_aresta(1, 2)
 adicionar_aresta(1, 3)
-adicionar_aresta(2, 3)
-mostrar_lista()
+adicionar_aresta(2, 1)
+adicionar_aresta(3, 1)
+mostrar_grafo()
+mostrar_grafo_detalhado()
